@@ -1,4 +1,8 @@
-﻿using System;
+﻿//biblioteca do csharp
+/*
+  comentário de bloco
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +18,7 @@ namespace ProjetoLojaABC
     {
         public frmLogin()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -27,6 +31,12 @@ namespace ProjetoLojaABC
             frmMenuPrincipal abrir = new frmMenuPrincipal();
             abrir.Show();
             this.Hide();
+
+            
         }
+
+       
+              
+
     }
 }
