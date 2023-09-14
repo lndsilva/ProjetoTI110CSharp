@@ -175,6 +175,7 @@ namespace ProjetoLojaABC
             this.btnCalcular.TabIndex = 7;
             this.btnCalcular.Text = "&Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnLimpar
             // 
@@ -201,6 +202,7 @@ namespace ProjetoLojaABC
             this.btnSair.TabIndex = 9;
             this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmCalculadora
             // 
