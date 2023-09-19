@@ -31,16 +31,16 @@ namespace ProjetoLojaABC
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculadora));
             this.gpbOperacoes = new System.Windows.Forms.GroupBox();
-            this.rdbAdicao = new System.Windows.Forms.RadioButton();
+            this.rdbDivisao = new System.Windows.Forms.RadioButton();
+            this.rdbMultiplicacao = new System.Windows.Forms.RadioButton();
             this.rdbSubtracao = new System.Windows.Forms.RadioButton();
+            this.rdbAdicao = new System.Windows.Forms.RadioButton();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblV1 = new System.Windows.Forms.Label();
             this.lblV2 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.txtV1 = new System.Windows.Forms.TextBox();
             this.txtV2 = new System.Windows.Forms.TextBox();
-            this.rdbMultiplicacao = new System.Windows.Forms.RadioButton();
-            this.rdbDivisao = new System.Windows.Forms.RadioButton();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
@@ -61,16 +61,25 @@ namespace ProjetoLojaABC
             this.gpbOperacoes.TabStop = false;
             this.gpbOperacoes.Text = "Operações";
             // 
-            // rdbAdicao
+            // rdbDivisao
             // 
-            this.rdbAdicao.AutoSize = true;
-            this.rdbAdicao.Location = new System.Drawing.Point(68, 51);
-            this.rdbAdicao.Name = "rdbAdicao";
-            this.rdbAdicao.Size = new System.Drawing.Size(99, 24);
-            this.rdbAdicao.TabIndex = 3;
-            this.rdbAdicao.TabStop = true;
-            this.rdbAdicao.Text = "Adição (+)";
-            this.rdbAdicao.UseVisualStyleBackColor = true;
+            this.rdbDivisao.AutoSize = true;
+            this.rdbDivisao.Location = new System.Drawing.Point(68, 204);
+            this.rdbDivisao.Name = "rdbDivisao";
+            this.rdbDivisao.Size = new System.Drawing.Size(96, 24);
+            this.rdbDivisao.TabIndex = 6;
+            this.rdbDivisao.Text = "Divisão (/)";
+            this.rdbDivisao.UseVisualStyleBackColor = true;
+            // 
+            // rdbMultiplicacao
+            // 
+            this.rdbMultiplicacao.AutoSize = true;
+            this.rdbMultiplicacao.Location = new System.Drawing.Point(68, 157);
+            this.rdbMultiplicacao.Name = "rdbMultiplicacao";
+            this.rdbMultiplicacao.Size = new System.Drawing.Size(138, 24);
+            this.rdbMultiplicacao.TabIndex = 5;
+            this.rdbMultiplicacao.Text = "Multiplicação (*)";
+            this.rdbMultiplicacao.UseVisualStyleBackColor = true;
             // 
             // rdbSubtracao
             // 
@@ -79,9 +88,18 @@ namespace ProjetoLojaABC
             this.rdbSubtracao.Name = "rdbSubtracao";
             this.rdbSubtracao.Size = new System.Drawing.Size(120, 24);
             this.rdbSubtracao.TabIndex = 4;
-            this.rdbSubtracao.TabStop = true;
             this.rdbSubtracao.Text = "Subtração (-)";
             this.rdbSubtracao.UseVisualStyleBackColor = true;
+            // 
+            // rdbAdicao
+            // 
+            this.rdbAdicao.AutoSize = true;
+            this.rdbAdicao.Location = new System.Drawing.Point(68, 51);
+            this.rdbAdicao.Name = "rdbAdicao";
+            this.rdbAdicao.Size = new System.Drawing.Size(99, 24);
+            this.rdbAdicao.TabIndex = 3;
+            this.rdbAdicao.Text = "Adição (+)";
+            this.rdbAdicao.UseVisualStyleBackColor = true;
             // 
             // lblTotal
             // 
@@ -141,28 +159,6 @@ namespace ProjetoLojaABC
             this.txtV2.Size = new System.Drawing.Size(100, 26);
             this.txtV2.TabIndex = 1;
             // 
-            // rdbMultiplicacao
-            // 
-            this.rdbMultiplicacao.AutoSize = true;
-            this.rdbMultiplicacao.Location = new System.Drawing.Point(68, 157);
-            this.rdbMultiplicacao.Name = "rdbMultiplicacao";
-            this.rdbMultiplicacao.Size = new System.Drawing.Size(138, 24);
-            this.rdbMultiplicacao.TabIndex = 5;
-            this.rdbMultiplicacao.TabStop = true;
-            this.rdbMultiplicacao.Text = "Multiplicação (*)";
-            this.rdbMultiplicacao.UseVisualStyleBackColor = true;
-            // 
-            // rdbDivisao
-            // 
-            this.rdbDivisao.AutoSize = true;
-            this.rdbDivisao.Location = new System.Drawing.Point(68, 204);
-            this.rdbDivisao.Name = "rdbDivisao";
-            this.rdbDivisao.Size = new System.Drawing.Size(96, 24);
-            this.rdbDivisao.TabIndex = 6;
-            this.rdbDivisao.TabStop = true;
-            this.rdbDivisao.Text = "Divisão (/)";
-            this.rdbDivisao.UseVisualStyleBackColor = true;
-            // 
             // btnCalcular
             // 
             this.btnCalcular.BackColor = System.Drawing.Color.Teal;
@@ -189,6 +185,7 @@ namespace ProjetoLojaABC
             this.btnLimpar.TabIndex = 8;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSair
             // 
