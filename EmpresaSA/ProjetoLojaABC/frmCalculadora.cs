@@ -27,60 +27,82 @@ namespace ProjetoLojaABC
                 MessageBoxIcon.Information,
                 MessageBoxDefaultButton.Button3);
 
-            Application.Exit();
+            if (resp == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            if (resp == DialogResult.No)
+            {
+                limparCampos();
+            }
+            if (resp == DialogResult.Cancel)
+            {
+                limparCampos();
+            }            
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             double num1, num2, resultado = 0;
 
-            num1 = Convert.ToDouble(txtV1.Text);
-            num2 = Convert.ToDouble(txtV2.Text);
-
-            if (rdbAdicao.Checked || rdbSubtracao.Checked || rdbMultiplicacao.Checked || rdbDivisao.Checked)
+            try
             {
+                num1 = Convert.ToDouble(txtV1.Text);
+                num2 = Convert.ToDouble(txtV2.Text);
 
-                if (rdbAdicao.Checked)
+                if (rdbAdicao.Checked || rdbSubtracao.Checked || rdbMultiplicacao.Checked || rdbDivisao.Checked)
                 {
-                    resultado = num1 + num2;
 
-                }
-                if (rdbSubtracao.Checked)
-                {
-                    resultado = num1 - num2;
-                }
-                if (rdbMultiplicacao.Checked)
-                {
-                    resultado = num1 * num2;
-                }
-                if (rdbDivisao.Checked)
-                {
-                    if (num2 != 0)
+                    if (rdbAdicao.Checked)
                     {
-                        resultado = num1 / num2;
+                        resultado = num1 + num2;
 
                     }
-                    else
+                    if (rdbSubtracao.Checked)
                     {
-                        MessageBox.Show("Impossível dividir por zero!!!",
-                         "Mensagem do sistema",
-                         MessageBoxButtons.OK,
-                         MessageBoxIcon.Error,
-                         MessageBoxDefaultButton.Button1);
+                        resultado = num1 - num2;
                     }
+                    if (rdbMultiplicacao.Checked)
+                    {
+                        resultado = num1 * num2;
+                    }
+                    if (rdbDivisao.Checked)
+                    {
+                        if (num2 != 0)
+                        {
+                            resultado = num1 / num2;
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Impossível dividir por zero!!!",
+                             "Mensagem do sistema",
+                             MessageBoxButtons.OK,
+                             MessageBoxIcon.Error,
+                             MessageBoxDefaultButton.Button1);
+                        }
+                    }
+                    lblTotal.Text = resultado.ToString();
+                    limparCamposCalcular();
                 }
-                lblTotal.Text = resultado.ToString();
-                limparCamposCalcular();
+                else
+                {
+                    MessageBox.Show("Favor escolher um operação!!!",
+                            "Mensagem do sistema",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error,
+                            MessageBoxDefaultButton.Button1);
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Favor escolher um operação!!!",
-                        "Mensagem do sistema",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error,
-                        MessageBoxDefaultButton.Button1);
-            }
-            
+                MessageBox.Show("Favor inserir somente números!!!",
+                            "Mensagem do sistema",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error,
+                            MessageBoxDefaultButton.Button1);
+                limparCampos();
+            }            
         }
 
         //criando o método para limpar conteúdo
