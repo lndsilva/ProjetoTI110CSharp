@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49CE9B15-E43B-426E-BD01-432C87E82B38}</ProjectGuid>
+    <ProjectGuid>{40F79B25-F1CC-4BF7-B1AC-9F100C3FFAA7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ProjetoLojaABC</RootNamespace>
-    <AssemblyName>ProjetoLojaABC</AssemblyName>
+    <RootNamespace>EmpresaSA</RootNamespace>
+    <AssemblyName>EmpresaSA</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,66 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCalculadora.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCalculadora.Designer.cs">
-      <DependentUpon>frmCalculadora.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmFuncionarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmFuncionarios.Designer.cs">
-      <DependentUpon>frmFuncionarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMenuPrincipal.Designer.cs">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPesquisarFuncionarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPesquisarFuncionarios.Designer.cs">
-      <DependentUpon>frmPesquisarFuncionarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSplash.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSplash.Designer.cs">
-      <DependentUpon>frmSplash.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCalculadora.resx">
-      <DependentUpon>frmCalculadora.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFuncionarios.resx">
-      <DependentUpon>frmFuncionarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMenuPrincipal.resx">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPesquisarFuncionarios.resx">
-      <DependentUpon>frmPesquisarFuncionarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSplash.resx">
-      <DependentUpon>frmSplash.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
