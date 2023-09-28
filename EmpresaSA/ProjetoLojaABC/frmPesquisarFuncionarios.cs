@@ -7,29 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
- 
+
 
 namespace ProjetoLojaABC
 {
     public partial class frmPesquisarFuncionarios : Form
     {
-        
+        public string nome;
+
         public frmPesquisarFuncionarios()
         {
             InitializeComponent();
             desabilitarCampos();
         }
-
-        private void frmPesquisarFuncionarios_Load(object sender, EventArgs e)
+        public frmPesquisarFuncionarios(string nome)
         {
-            
+            InitializeComponent();
+            desabilitarCampos();
+            this.nome = nome;
+
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             ltbPesquisar.Items.Clear();
             ltbPesquisar.Items.Add(txtDescricao.Text);
-            
+
         }
 
         //desabilitar campos
@@ -40,7 +43,7 @@ namespace ProjetoLojaABC
             txtDescricao.Enabled = false;
             rdbCodigo.Checked = false;
             rdbNome.Checked = false;
-        } 
+        }
         //Habilitar campos
         public void HabilitarCampos()
         {
@@ -56,7 +59,8 @@ namespace ProjetoLojaABC
             txtDescricao.Clear();
             rdbCodigo.Checked = false;
             rdbNome.Checked = false;
-            txtDescricao.Focus();
+            txtDescricao.Enabled = false;
+            //txtDescricao.Focus();
             //limpa a lista
             ltbPesquisar.Items.Clear();
 
@@ -74,6 +78,24 @@ namespace ProjetoLojaABC
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             limparCampos();
+        }
+
+        private void ltbPesquisar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ltbPesquisar.SelectedItem == null)
+            {
+                MessageBox.Show("Favor selecionar um item.",
+                    "Mensagem do sistema",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+            }
+            else
+            {
+                string nome = ltbPesquisar.SelectedItem.ToString();
+                frmFuncionarios abrir = new frmFuncionarios(nome);
+                abrir.Show();
+                this.Hide();
+            }
         }
     }
 }

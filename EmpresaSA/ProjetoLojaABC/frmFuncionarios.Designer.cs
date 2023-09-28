@@ -57,16 +57,18 @@ namespace ProjetoLojaABC
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.btnEcluir = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
+            this.btnCarregaCEP = new System.Windows.Forms.Button();
             this.gpbFuncionarios.SuspendLayout();
             this.pnlCRUD.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpbFuncionarios
             // 
+            this.gpbFuncionarios.Controls.Add(this.btnCarregaCEP);
             this.gpbFuncionarios.Controls.Add(this.txtCidade);
             this.gpbFuncionarios.Controls.Add(this.lblCidade);
             this.gpbFuncionarios.Controls.Add(this.cbbEstado);
@@ -298,7 +300,7 @@ namespace ProjetoLojaABC
             this.pnlCRUD.Controls.Add(this.btnVoltar);
             this.pnlCRUD.Controls.Add(this.btnLimpar);
             this.pnlCRUD.Controls.Add(this.btnPesquisar);
-            this.pnlCRUD.Controls.Add(this.btnEcluir);
+            this.pnlCRUD.Controls.Add(this.btnExcluir);
             this.pnlCRUD.Controls.Add(this.btnAlterar);
             this.pnlCRUD.Controls.Add(this.btnCadastrar);
             this.pnlCRUD.Controls.Add(this.btnNovo);
@@ -349,18 +351,19 @@ namespace ProjetoLojaABC
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // btnEcluir
+            // btnExcluir
             // 
-            this.btnEcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnEcluir.Image")));
-            this.btnEcluir.Location = new System.Drawing.Point(335, 9);
-            this.btnEcluir.Name = "btnEcluir";
-            this.btnEcluir.Size = new System.Drawing.Size(105, 41);
-            this.btnEcluir.TabIndex = 16;
-            this.btnEcluir.Text = "&Excluir";
-            this.btnEcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.Location = new System.Drawing.Point(335, 9);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(105, 41);
+            this.btnExcluir.TabIndex = 16;
+            this.btnExcluir.Text = "&Excluir";
+            this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -374,6 +377,7 @@ namespace ProjetoLojaABC
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnCadastrar
             // 
@@ -402,6 +406,16 @@ namespace ProjetoLojaABC
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            // 
+            // btnCarregaCEP
+            // 
+            this.btnCarregaCEP.Location = new System.Drawing.Point(478, 332);
+            this.btnCarregaCEP.Name = "btnCarregaCEP";
+            this.btnCarregaCEP.Size = new System.Drawing.Size(250, 116);
+            this.btnCarregaCEP.TabIndex = 21;
+            this.btnCarregaCEP.Text = "Carrega CEP";
+            this.btnCarregaCEP.UseVisualStyleBackColor = true;
+            this.btnCarregaCEP.Click += new System.EventHandler(this.btnCarregaCEP_Click);
             // 
             // frmFuncionarios
             // 
@@ -453,9 +467,10 @@ namespace ProjetoLojaABC
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnPesquisar;
-        private System.Windows.Forms.Button btnEcluir;
+        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.Button btnCarregaCEP;
     }
 }
