@@ -172,10 +172,11 @@ namespace ProjetoLojaABC
         private void btnNovo_Click(object sender, EventArgs e)
         {
             habilitarCampos();
+            carregaCodigo();
         }
 
         //Cadastrando funcionários no banco de dados
-        public void cadastraFuncionarios()
+        public int cadastraFuncionarios()
         {
             MySqlCommand comm = new MySqlCommand();
             comm.CommandText = "insert into tbFuncionarios(nome,email,cpf,dNasc,endereco,cep,numero,bairro,estado,cidade)values(@nome,@email,@cpf,@dNasc,@endereco,@cep,@numero,@bairro,@estado,@cidade);";
@@ -186,7 +187,7 @@ namespace ProjetoLojaABC
             comm.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = txtNome.Text;
             comm.Parameters.Add("@email", MySqlDbType.VarChar, 100).Value = txtEmail.Text;
             comm.Parameters.Add("@cpf", MySqlDbType.VarChar, 14).Value = mskCPF.Text;
-            comm.Parameters.Add("@dNasc", MySqlDbType.Date).Value = dtpDNasc.Text;
+            comm.Parameters.Add("@dNasc", MySqlDbType.Date).Value = Convert.ToDateTime(dtpDNasc.Text);
             comm.Parameters.Add("@endereco", MySqlDbType.VarChar, 100).Value = txtEndereco.Text;
             comm.Parameters.Add("@cep", MySqlDbType.VarChar, 9).Value = mskCEP.Text;
             comm.Parameters.Add("@numero", MySqlDbType.VarChar, 10).Value = txtNumero.Text;
@@ -196,10 +197,58 @@ namespace ProjetoLojaABC
 
             comm.Connection = Conexao.obterConexao();
 
-            comm.ExecuteNonQuery();
+            int res = comm.ExecuteNonQuery();
 
             Conexao.fecharConexao();
 
+            return res;
+        }
+
+        //carrega codigo
+        public void carregaCodigo()
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "select codFunc+1 from tbFuncionarios order by codFunc desc;";
+            comm.CommandType = CommandType.Text;
+
+            comm.Connection = Conexao.obterConexao();
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+            DR.Read();
+
+            txtCodigo.Text = Convert.ToString(DR.GetInt32(0));
+
+            Conexao.fecharConexao();
+        }
+
+        //carregar funcionario
+        public void carregaFuncionario(string nome)
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "select * from tbFuncionarios where nome = @nome;";
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = nome;
+            comm.Connection = Conexao.obterConexao();
+
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+            DR.Read();
+
+            txtCodigo.Text = Convert.ToString(DR.GetInt32(0));
+            txtNome.Text = DR.GetString(1);
+            txtEmail.Text = DR.GetString(2);
+            mskCPF.Text = DR.GetString(3);
+            dtpDNasc.Text = DR.GetString(4);
+            txtEndereco.Text = DR.GetString(5);
+            mskCEP.Text = DR.GetString(6);
+            txtNumero.Text = DR.GetString(7);
+            txtBairro.Text = DR.GetString(8);
+            cbbEstado.Text = DR.GetString(9);
+            txtCidade.Text = DR.GetString(10);
+
+            Conexao.fecharConexao();
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -212,12 +261,17 @@ namespace ProjetoLojaABC
             }
             else
             {
-                MessageBox.Show("Cadastrado com sucesso.");
-                desabilitarCamposNovo();
-                limparCampos();
+                if (cadastraFuncionarios() == 1)
+                {
+                    MessageBox.Show("Cadastrado com sucesso!!!");
+                    desabilitarCamposNovo();
+                    limparCampos();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao Cadastrar.");
+                }
             }
-
-
         }
 
         private void frmFuncionarios_Load(object sender, EventArgs e)
