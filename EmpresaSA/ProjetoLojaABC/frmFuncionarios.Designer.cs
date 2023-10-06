@@ -31,6 +31,7 @@ namespace ProjetoLojaABC
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFuncionarios));
             this.gpbFuncionarios = new System.Windows.Forms.GroupBox();
+            this.btnConectar = new System.Windows.Forms.Button();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.lblCidade = new System.Windows.Forms.Label();
             this.cbbEstado = new System.Windows.Forms.ComboBox();
@@ -61,7 +62,6 @@ namespace ProjetoLojaABC
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
-            this.btnConectar = new System.Windows.Forms.Button();
             this.gpbFuncionarios.SuspendLayout();
             this.pnlCRUD.SuspendLayout();
             this.SuspendLayout();
@@ -98,7 +98,15 @@ namespace ProjetoLojaABC
             this.gpbFuncionarios.TabIndex = 0;
             this.gpbFuncionarios.TabStop = false;
             this.gpbFuncionarios.Text = "Dados";
-            this.gpbFuncionarios.Enter += new System.EventHandler(this.gpbFuncionarios_Enter);
+            // 
+            // btnConectar
+            // 
+            this.btnConectar.Location = new System.Drawing.Point(427, 340);
+            this.btnConectar.Name = "btnConectar";
+            this.btnConectar.Size = new System.Drawing.Size(180, 54);
+            this.btnConectar.TabIndex = 21;
+            this.btnConectar.Text = "Conectar";
+            this.btnConectar.UseVisualStyleBackColor = true;
             // 
             // txtCidade
             // 
@@ -231,8 +239,7 @@ namespace ProjetoLojaABC
             this.dtpDNasc.Name = "dtpDNasc";
             this.dtpDNasc.Size = new System.Drawing.Size(104, 24);
             this.dtpDNasc.TabIndex = 5;
-            this.dtpDNasc.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
+             // 
             // lblDNasc
             // 
             this.lblDNasc.AutoSize = true;
@@ -241,7 +248,6 @@ namespace ProjetoLojaABC
             this.lblDNasc.Size = new System.Drawing.Size(140, 18);
             this.lblDNasc.TabIndex = 6;
             this.lblDNasc.Text = "Data de nascimento";
-            this.lblDNasc.Click += new System.EventHandler(this.label4_Click);
             // 
             // mskCPF
             // 
@@ -407,15 +413,6 @@ namespace ProjetoLojaABC
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
-            // 
-            // btnConectar
-            // 
-            this.btnConectar.Location = new System.Drawing.Point(427, 340);
-            this.btnConectar.Name = "btnConectar";
-            this.btnConectar.Size = new System.Drawing.Size(180, 54);
-            this.btnConectar.TabIndex = 21;
-            this.btnConectar.Text = "Conectar";
-            this.btnConectar.UseVisualStyleBackColor = true;
             // 
             // frmFuncionarios
             // 
