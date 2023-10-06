@@ -76,3 +76,4 @@ C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaS
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.csproj.CopyComplete
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.exe
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmCadastroUsuarios.resources
