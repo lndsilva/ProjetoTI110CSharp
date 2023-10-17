@@ -37,6 +37,9 @@ C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110\EmpresaSA\Proj
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110\EmpresaSA\ProjetoLojaABC\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110\EmpresaSA\ProjetoLojaABC\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.csproj.CopyComplete
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmLogin.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmMenuPrincipal.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmPesquisarFuncionarios.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\bin\Debug\ProjetoLojaABC.exe.config
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\bin\Debug\ProjetoLojaABC.exe
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\bin\Debug\ProjetoLojaABC.pdb
@@ -62,13 +65,11 @@ C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaS
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\bin\Debug\System.Memory.xml
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.csproj.AssemblyReference.cache
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.Form1.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmCadastroUsuarios.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmCalculadora.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmFuncionarios.resources
-C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmLogin.resources
-C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmMenuPrincipal.resources
-C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmPesquisarFuncionarios.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmPesquisarUsuarios.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmSplash.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.Properties.Resources.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.csproj.GenerateResource.cache
@@ -76,4 +77,3 @@ C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaS
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.csproj.CopyComplete
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.exe
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.pdb
-C:\Users\laercio.nsilva\Documents\Visual Studio 2019\ProjetoTI110CSharp\EmpresaSA\ProjetoLojaABC\obj\Debug\ProjetoLojaABC.frmCadastroUsuarios.resources
